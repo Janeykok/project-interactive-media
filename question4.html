@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graag-Plekken-Spelend ONtdekken</title>
+  <meta charset='UTF-8'>
+  <script src="compass.js"></script>
+  <script src="script.js"></script>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="menubar">
+    <button onclick="location.href='index.html';">Startpagina</button>
+    <button onclick="location.href='aboutpage.html';">Spelregels</button>
+    <button onclick="location.href='interactive-map.html';">Plattegrond</button>
+  </div>
+  <div id="inhoud">
+  <p>Loop 15 stappen op 127 graden, ga de trap op omhoog, loop 50 stappen op 307 graden en loop als laatste 25 stappen op 215 graden.</p>
+  <div id="text">Zoeken naar GPS verbinding</div>
+  <div id="compass">
+    <div class="north">N</div>
+    <div class="south"></div>
+  </div>
+  <div id="meta"></div>
+  <div id="false" style="display:none">
+    <button type="button" onclick="closeDiv()" id="closebutton">&#10006;</button>
+    Dit is het verkeerde antwoord. Probeer het nog een keer! Hint: Het zijn er veel!
+  </div>
+  <div id="correct" style="display:none">
+    Helemaal goed! Deze bibliotheek heet De Cuypersbibliotheek en is het grootste en oudste bibliotheek met kunsthistorie van Nederland.
+    Al sinds 1885 worden allemaal boeken, tijdschriften, informatie over veilingen en jaarverslagen verzameld.
+    <button type="button" onclick="location.href='question5.html';">Naar vraag 5</button>
+  </div>
+  <h1>Vraag 4</h1>
+  <p id="vraag4"> <br>Je staat nu in de bibliotheek van het Rijksmuseum. Hoeveel boeken en tijdschriften zijn hier ongeveer?<br>
+    <button onclick="questionFalse('false')">A: Ongeveer 150.000</button><br>
+    <button onclick="questionFalse('false')">B: Ongeveer 250.000</button><br>
+    <button onclick="questionCorrect('correct')">C: Ongeveer 350.000</button>
+  </p>
+  <img src="https://thumbs.werkaandemuur.nl/10ba91ae9f09e58a697de9badef3fa1c_950x600_fit.jpg" id="bieb">
+  <br>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graag-Plekken-Spelend ONtdekken</title>
+  <meta charset='UTF-8'>
+  <script src="compass.js"></script>
+  <script src="script.js"></script>
+  <script src="lodash.min.js"></script>
+  <script src="actions.js"></script>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="menubar">
+    <button onclick="location.href='index.html';">Startpagina</button>
+    <button onclick="location.href='aboutpage.html';">Spelregels</button>
+    <button onclick="location.href='interactive-map.html';">Plattegrond</button>
+  </div>
+  <div id="inhoud">
+  <p>Loop 10 stappen op 35 graden</p>
+  <div id="text">Zoeken naar GPS verbinding</div>
+  <div id="compass">
+    <div class="north">N</div>
+    <div class="south"></div>
+  </div>
+  <div id="meta"></div>
+
+  <div id="correct" style="display:none">
+    Dit is het goede antwoord. Dit zijn allemaal schilders en namen van schilderijen uit de Eregalerij.
+    <button type="button" onclick="location.href='lastpage.html';">Einde</button>
+  </div>
+  <h1>Vraag 8</h1>
+  <div id="memory_board">
+  </div>
+  <script>newBoard();</script>
+  </div>
+</body>
+</html>

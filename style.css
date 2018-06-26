@@ -1,0 +1,293 @@
+#voorpagina {
+  background-image: url("voorpaginaversie2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+}
+
+#laatstepagina {
+  background-image: url("achtergrondeinde.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+}
+
+body {
+  background-image: url("achtergrond1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+  font-family: Helvetica;
+}
+
+#menubar {
+  margin: auto;
+  width: auto;
+  height: 100%;
+  background-color: #E84190;
+  padding: 10px;
+  font-size: 150%;
+}
+
+button {
+  background-color: #00ADFF;
+  color: white;
+  border: 2px solid #00ADFF;
+  border-radius: 12px;
+  font-size: 80%;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  font-size: 20px;
+}
+
+#hierbutton {
+  background-color: white;
+  color: black;
+  border: 4px solid #00ADFF;
+  border-radius: 12px;
+  font-size: 200%;
+  position: absolute;
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  margin-top: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+#startbutton {
+  background-color: #00ADFF;
+  color: white;
+  border: 4px solid #00ADFF;
+  border-radius: 12px;
+  font-size: 175%;
+}
+
+#closebutton {
+  display: block;
+  float: right;
+  cursor: pointer;
+}
+
+/*responsive part*/
+@media only screen and (max-width: 1060px) { /* WARNING: Dit stuk is dus alleen voor de mobiele en tablet versie */
+  #inhoud {
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    border-style: solid;
+    border-color: #E84190;
+    border-radius: 8px;
+    margin-top: 5%;
+  }
+  #inhoud p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-large;
+  }
+  #inhoud h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-large;
+  }
+  #false {
+    margin: auto;
+    width: auto;
+    border: 1.5px solid #e60000;
+    padding: 15px;
+    background-color: #ffebe6;
+  }
+  #correct {
+    margin: auto;
+    width: auto;
+    border: 1.5px solid #2eb82e;
+    padding: 15px;
+    background-color: #e6fff2;
+  }
+  #inhoud img {
+    display: block;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #inhoud #schepenvitrine {
+    width: 75%;
+  }
+  #inhoud #harnas {
+    width: 75%;
+  }
+  #inhoud #pistoolring, #foutpistool1, #foutpistool2 {
+    width: 50%;
+  }
+  #inhoud #cupido {
+    width: 50%;
+  }
+  #inhoud #bieb {
+    width: 75%;
+  }
+  #inhoud #rebus {
+    width: 100%;
+  }
+  #inhoud #Nachtwacht {
+    width: 75%;
+  }
+  #startpoint{
+    width: 90%;
+  }
+  #verdieping{
+    width: 90%
+  }
+}
+
+@media only screen and (min-width: 1061px) { /* WARNING: Dit stuk is alleen voor de laptop versie */
+  #inhoud {
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border-style: solid;
+    border-color: #00ADFF;
+    border-radius: 8px;
+    margin-top: 5%;
+
+  }
+  #inhoud p {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: x-large;
+  }
+  #inhoud h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-large;
+  }
+  #false {
+    margin: auto;
+    width: auto;
+    border: 1.5px solid #e60000;
+    padding: 15px;
+    background-color: #ffebe6;
+  }
+  #correct {
+    margin: auto;
+    width: auto;
+    border: 1.5px solid #2eb82e;
+    padding: 15px;
+    background-color: #e6fff2;
+  }
+  #inhoud img {
+    display: block;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #inhoud #schepenvitrine {
+    width: 75%;
+  }
+  #inhoud #harnas {
+    width: 50%;
+  }
+  #inhoud #pistoolring, #foutpistool1, #foutpistool2 {
+    width: 50%;
+  }
+  #inhoud #cupido {
+    width: 50%;
+  }
+  #inhoud #bieb {
+    width: 75%;
+  }
+  #inhoud #rebus {
+    width: 100%;
+  }
+  #inhoud #Nachtwacht {
+    width: 75%;
+  }
+  #startpoint{
+    width: 90%;
+  }
+  #verdieping{
+    width: 90%
+  }
+}
+
+
+/* Kompas style */
+#text {
+  font-size: large;
+  margin-top: 10%;
+  text-align: center;
+}
+
+#compass {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 50px auto 0 auto;
+  border: 4px dotted black;
+  border-radius: 100px;
+}
+
+.north, .south {
+  position: absolute;
+  left: 94px;
+  width: 12px;
+  height: 100px;
+}
+
+.north {
+  top: 0;
+  background: #E84190;
+  text-align: center;
+  font-size: 15px;
+}
+
+.south {
+  top: 100px;
+  background: #00B4FF;
+  text-align: center;
+  font-size: 15px;
+}
+
+#meta {
+  margin-top: 20px;
+  font-size: x-large;
+  text-align: center;
+}
+
+/*Memory board style */
+div#memory_board {
+ background:#CCF0FF;
+ border:#999 1px solid;
+ width: 1000px;
+ height: 540px;
+ padding: 50px;
+ margin: 0px auto;
+}
+
+div#memory_board > div {
+ background: #00B4FF;
+ border: #000 1px solid;
+ width: 100px;
+ height: 100px;
+ float: left;
+ margin: 10px;
+ padding: 20px;
+ font-size: 64px;
+ cursor: pointer;
+ text-align: center;
+ font-size: 155%;
+}

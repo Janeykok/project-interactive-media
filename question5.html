@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graag-Plekken-Spelend ONtdekken</title>
+  <meta charset='UTF-8'>
+  <script src="compass.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="menubar">
+    <button onclick="location.href='index.html';">Startpagina</button>
+    <button onclick="location.href='aboutpage.html';">Spelregels</button>
+    <button onclick="location.href='interactive-map.html';">Plattegrond</button>
+  </div>
+  <div id="inhoud">
+  <p>Loop 50 stappen op 127 graden en dan nog 25 stappen op 35 graden.</p>
+  <div id="text">Zoeken naar GPS verbinding</div>
+  <div id="compass">
+    <div class="north">N</div>
+    <div class="south"></div>
+  </div>
+  <div id="meta"></div>
+  <h1>Vraag 5</h1>
+  <img src="https://lh3.googleusercontent.com/i8S7we9zDW-AqUbZvE91O4bqsgVI_MamJhChLz6lE55MIn_kAjrYNoudrM-YEKjZTLUPyXVBgi__m6n1MMWmcbsHMy8=s500-c" id="cupido">
+  <p>Op de foto zie je een cupido gemaakt van steen. Wat zijn de twee kenmerken van dit beeld?</p>
+  <img src="puzzel.png" id="rebus">
+  <div id="false" style="display:none">
+    <button type="button" onclick="closeDiv()" id="closebutton">&#10006;</button>
+    Dit is het verkeerde antwoord. Probeer het nog een keer!
+  </div>
+  <div id="correct" style="display:none">
+    Juist, 'stiekem en zwijgen' zijn de twee kenmerken van deze cupido. Zittende Amor, zoals deze cupido heet,
+    heeft verschillende bijnamen waarvan de bekendste 'De dreigende liefde' is, omdat de blik heel erg dreigend is.
+    <button type="button" onclick="location.href='question6.html';">Naar Vraag 6</button>
+  </div>
+  <p id="demo", id="vraag5"><br>
+    Vul het antwoord van de rebus in.<br>
+    <input id="answer5" placeholder="Vul hier het juiste woord in"/>
+    <button onclick="question5()">Verzenden</button>
+  </p>
+  <br>
+</body>
+</html>

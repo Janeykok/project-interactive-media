@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graag-Plekken-Spelend ONtdekken</title>
+  <meta charset='UTF-8'>
+  <script src="compass.js"></script>
+  <script src="script.js"></script>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="menubar">
+    <button onclick="location.href='index.html';">Startpagina</button>
+    <button onclick="location.href='aboutpage.html';">Spelregels</button>
+    <button onclick="location.href='interactive-map.html';">Plattegrond</button>
+  </div>
+  <div id="inhoud">
+  <p>Blijf precies staan waar je bent.</p>
+  <div id="text">Zoeken naar GPS verbinding</div>
+  <div id="compass">
+    <div class="north">N</div>
+    <div class="south"></div>
+  </div>
+  <div id="meta"></div>
+  <div id="false" style="display:none">
+    <button type="button" onclick="closeDiv()" id="closebutton">&#10006;</button>
+    Dit is het verkeerde antwoord. Probeer het nog een keer! Hint: De Nachtwacht is wel heel groot...
+  </div>
+  <div id="correct" style="display:none">
+    Juiste antwoord! Toen mensen rond 1715 de Nachtwacht wilden verhuizen, paste het schilderij niet meer door de deur.
+    Daarom hebben ze er maar een stukje afgehaald. <br> Zie je het schilderij rechts van de Nachtwacht?
+    Zo zag de Nachtwacht er vroeger uit. Sommige mensen die op de Nachtwacht staan hebben veel geld betaald om op het schilderij te komen en
+    waren boos dat ze er niet meer opstonden. Later heeft een onbekend persoon alle namen geschilderd in de spiegel, die aan de bovenkant van het schilderij staat, om de boze mensen tevreden te houden.
+    <button type="button" onclick="location.href='question8.html';">Naar vraag 8</button>
+  </div>
+  <h1>Vraag 7</h1>
+  <p id="vraag7"><br> Nog een vraag over de Nachtwacht. Waarom hebben mensen vroeger er een stukje afgehaald? <br>
+    <button onclick="questionCorrect('correct')">A: Nachtwacht paste niet door de deur</button><br>
+    <button onclick="questionFalse('false')">B: Dat stukje vonden mensen lelijk</button><br>
+    <button onclick="questionFalse('false')">C: Per ongeluk</button>
+  </p>
+  <img src="https://lh3.googleusercontent.com/vvYcfHYldmNr8EpSdnyi3af9BYiFB9ev8Hxm5taOXbKzPyr1-blKkxZ28HZ71kQdayor8WWjQaDb2QPEY3XJ4VLgGOo=s940" id="Nachtwacht">
+  <br>
+</body>
+</html>

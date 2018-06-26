@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graag-Plekken-Spelend ONtdekken</title>
+  <meta charset='UTF-8'>
+  <script src="compass.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="menubar">
+    <button onclick="location.href='index.html';">Startpagina</button>
+    <button onclick="location.href='aboutpage.html';">Spelregels</button>
+    <button onclick="location.href='interactive-map.html';">Plattegrond</button>
+  </div>
+  <div id="inhoud">
+  <p>Loop 10 stappen op 127 graden.</p>
+  <div id="text">Zoeken naar GPS verbinding</div>
+  <div id="compass">
+    <div class="north">N</div>
+    <div class="south"></div>
+  </div>
+  <div id="meta"></div>
+  <div id="false" style="display:none">
+    <button type="button" onclick="closeDiv()" id="closebutton">&#10006;</button>
+    Dit is het verkeerde antwoord. Probeer het nog een keer! Hint: 8 x 5 = ?
+  </div>
+  <div id="correct" style="display:none">
+    Goed gedaan! Dit harnas weegt 40 kilo en daardoor duurt het ook wel een uur om het aan te doen.
+    Wanneer soldaten een harnas ging passen, moesten ze ook altijd een koprol maken. Weet je waarom? <br>
+    Als soldaten een koprol met hun harnas kunnen maken, kunnen ze ook weer hun paard op als ze eraf zijn gevallen! <br>
+    <button type="button" onclick="location.href='question3.html';">Naar Vraag 3</button>
+  </div>
+  <h1>Vraag 2</h1>
+  <p id="vraag2"> <br> Hoe zwaar is het harnas?<br>
+    <img src="https://i.pinimg.com/originals/1a/d8/07/1ad807923050e183de4c2ced8cd7cb9f.jpg" id="harnas"> <br>
+    <button onclick="questionFalse('false')">A: 20 kg</button>
+    <button onclick="questionCorrect('correct')">B: 40 kg</button>
+    <button onclick="questionFalse('false')">C: 60 kg</button>
+  </p>
+  <br>
+  </div>
+</body>
+</html>

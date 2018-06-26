@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graag-Plekken-Spelend ONtdekken</title>
+  <meta charset='UTF-8'>
+  <script src="compass.js"></script>
+  <script src="script.js"></script>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="menubar">
+    <button onclick="location.href='index.html';">Startpagina</button>
+    <button onclick="location.href='aboutpage.html';">Spelregels</button>
+    <button onclick="location.href='interactive-map.html';">Plattegrond</button>
+  </div>
+  <div id="inhoud">
+  <p>Loop 50 stappen op 215 graden, loop 40 stappen op 307 graden, neem de lift naar de tweede verdieping, loop 5 stappen op 35 graden en als laatste loop 5 stappen op 127 graden.</p>
+  <div id="text">Zoeken naar GPS verbinding</div>
+  <div id="compass">
+    <div class="north">N</div>
+    <div class="south"></div>
+  </div>
+  <div id="meta"></div>
+  <div id="false" style="display:none">
+    <button type="button" onclick="closeDiv()" id="closebutton">&#10006;</button>
+    Dit is het verkeerde antwoord. Probeer het nog een keer! Hint: Je kan dit dragen.
+  </div>
+  <div id="correct" style="display:none">
+    Goed gevonden! Het logo van Amsterdam staat inderdaad op de witte jas, vlakbij de hand van de man die in het midden staat.
+    De drie Andreaskruisen zijn een verwijzing naar de stad Amsterdam.
+    <button type="button" onclick="location.href='question7.html';">Naar vraag 7</button>
+  </div>
+  <h1>Vraag 6</h1>
+  <p id="vraag6"> <br>Waar staat het wapen van Amsterdam, de Andreaskruisen, op de Nachtwacht?<br>
+    <button onclick="questionFalse('false')">A: Op een hoed</button> <br>
+    <button onclick="questionCorrect('correct')">B: Op een jas</button><br>
+    <button onclick="questionFalse('false')">C: In de spiegel</button>
+  </p>
+  <img src="https://lh3.googleusercontent.com/vvYcfHYldmNr8EpSdnyi3af9BYiFB9ev8Hxm5taOXbKzPyr1-blKkxZ28HZ71kQdayor8WWjQaDb2QPEY3XJ4VLgGOo=s940" id="Nachtwacht">
+  <br>
+</body>
+</html>

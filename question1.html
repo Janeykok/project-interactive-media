@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graag-Plekken-Spelend ONtdekken</title>
+  <meta charset='UTF-8'>
+  <script src="compass.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="menubar">
+    <button onclick="location.href='index.html';">Startpagina</button>
+    <button onclick="location.href='aboutpage.html';">Spelregels</button>
+    <button onclick="location.href='interactive-map.html';">Plattegrond</button>
+  </div>
+  <div id="inhoud">
+    <p>Begin vanaf het startpunt, loop 15 stappen op 35 graden en ga vervolgens 50 stappen op 127 graden.</p>
+  <div id="text">Zoeken naar GPS verbinding</div>
+  <div id="compass">
+    <div class="north">N</div>
+    <div class="south"></div>
+  </div>
+  <div id="meta"></div>
+  <div id="false" style="display:none">
+    <button type="button" onclick="closeDiv()" id="closebutton">&#10006;</button> <br>
+    Dit is het verkeerde antwoord. Probeer het nog een keer! Hint: Het aantal schepen ligt tussen de 30 en 40.
+  </div>
+  <div id="correct" style="display:none">
+    Goed gedaan! Al deze schepen in de vitrine zijn een kleine versie van een echt, groot schip.
+    Vroeger hadden mensen nog geen computer om een kleine versie van een schip te bouwen, daarom
+    maakten ze maquettes van een schip.
+    <button type="button" onclick="location.href='question2.html';">Naar Vraag 2</button>
+  </div>
+  <h1>Vraag 1</h1> <p id="vraag1"> <br>
+    <img src="https://cdn.cnn.com/cnnnext/dam/assets/130411135916-rijksmuseum-10---model-boats-horizontal-large-gallery.jpg" id="schepenvitrine">
+    Hoeveel schepen staan in deze vitrine? <br>
+    <input id="answer1" placeholder="Vul hier een getal in"/>
+    <button onclick="question1()">Verzenden</button> <br><br>
+    </p>
+  </div>
+</body>
+</html>

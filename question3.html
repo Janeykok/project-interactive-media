@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graag-Plekken-Spelend ONtdekken</title>
+  <meta charset='UTF-8'>
+  <script src="compass.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="menubar">
+    <button onclick="location.href='index.html';">Startpagina</button>
+    <button onclick="location.href='aboutpage.html';">Spelregels</button>
+    <button onclick="location.href='interactive-map.html';">Plattegrond</button>
+  </div>
+  <div id="inhoud">
+  <p>Draai 360 graden maar blijf op dezelfde plek.</p>
+  <div id="text">Zoeken naar GPS verbinding</div>
+  <div id="compass">
+    <div class="north">N</div>
+    <div class="south"></div>
+  </div>
+  <div id="meta"></div>
+  <div id="false" style="display:none">
+    <button type="button" onclick="closeDiv()" id="closebutton">&#10006;</button>
+    Dit is het verkeerde antwoord. Probeer het nog een keer! Hint: Je kan het om je vinger doen.
+  </div>
+  <div id="correct" style="display:none">
+    Goed geantwoord! Deze ring lijkt niet echt op een pistool, maar toch kan deze wel een kogel afvuren.
+    Het is een kleine, ronde kogel die uit de ring komt, maar je kan hier niemand mee doden gelukkig!
+    <button type="button" onclick="location.href='question4.html';">Naar Vraag 4</button>
+  </div>
+  <h1>Vraag 3</h1>
+  <p id="vraag3"> <br>Wat is het kleinste pistool? <br>
+    <img src="pistoolring.png" id="pistoolring">
+    <button onclick="questionCorrect('correct')">Foto A</button> <br><br>
+    <img src="https://i.pinimg.com/originals/40/93/81/409381ced577781855a41c22a0ac2a37.jpg" id="foutpistool1">
+    <button onclick="questionFalse('false')">Foto B</button> <br><br>
+    <img src="https://lh4.ggpht.com/KTJvWo-evAxJgObKVo42cu-fa07Uczkc7FIHMNPS3zfaTR91efQX1Onu6UDwgBBXoPbAvyuwU1U_4HGkf1ZuZ6CVgnqd=s0" id="foutpistool2">
+    <button onclick="questionFalse('false')">Foto C</button> <br><br>
+  </p>
+</body>
+</html>
